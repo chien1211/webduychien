@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url('anh1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+    width: 300px;
+  margin: 300px auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+h1 {
+    text-align: center;
+  margin-bottom: 10px;
+}
+label {
+    display: block;
+  margin-bottom: 5px;
+  
+}
+input{
+    width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+button {
+    width: 100%;
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Đăng Nhập</h1>
+        <form  action="/dang-nhap" method="post" onsubmit="return dangNhap()">
+            <label>Tài khoản</label>
+            <input type="text" placeholder="name">
+            <kabel>Mật khẩu</kabel>
+            <input type="password" placeholder="password">
+            <button>Đăng Nhập</button>
+        </form>
+        <script>
+            function dangNhap() {
+                // Xử lý dữ liệu đăng nhập
+                // ...
+    
+                // Chuyển hướng về trang chủ
+                window.location.href = "shop đồng hồ duy chiến.html";
+    
+                return false;
+            }
+        </script>
+    </div>
+</body>
+</html>
